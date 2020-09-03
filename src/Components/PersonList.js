@@ -18,7 +18,7 @@ const PersonList = (props) => {
                     {props.list.map((user, index) =>
 
                         <tr key={user.id} >
-                            <th scope="row"></th>
+                            <th scope="row">{user.id}</th>
                             <td>{user.name}</td>
                             <td>{user.lastname}</td>
                             <td>

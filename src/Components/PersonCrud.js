@@ -3,8 +3,9 @@ import React, { useState, Fragment } from 'react';
 //se usa para evitar que hayan tantos div que no tienen otra funcion que encapsular todo el render/return
 import PersonList from './PersonList';
 import PersonAdd from './PersonAdd';
-import shortid from 'shortid'
+import shortid from 'shortid' //npm install shortid
 import PersonUpdate from './PersonUpdate';
+import Footer from './Footer';
 
 export default function PersonCrud() {
     const u = {
@@ -49,9 +50,9 @@ export default function PersonCrud() {
     return (
         <Fragment>
             <div className="container" >
-                <div className="row justify-content-center">
-                    <div className="col-md-10">
-                        <h2 className="title">CRUD with persons</h2>
+                <div className="row justify-content-center mt">
+                    <div className="col-md-10 crud">
+                        <h2 className="title">CRUD USERS</h2>
                         <div className="row">
                             <div className="col-md-4">
                                 {action === 'add' ?
@@ -74,6 +75,7 @@ export default function PersonCrud() {
                     </div>
                 </div>
             </div>
+            <Footer></Footer>
         </Fragment>
     )
 }

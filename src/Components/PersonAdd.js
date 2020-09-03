@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { useForm } from 'react-hook-form'
+import { useForm } from 'react-hook-form' //mediante npm install react-hook-form
 
 const PersonAdd = (props) => {
 
@@ -15,7 +15,7 @@ const PersonAdd = (props) => {
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="form-group">
                     <input
-                        placeholder="Ingrese nombre de usuario"
+                        placeholder="Nombre de Usuario"
                         className="form-control"
                         name="name"
                         ref={register({
@@ -39,7 +39,7 @@ const PersonAdd = (props) => {
                 </div>
                 <div className="form-group">
                     <input
-                        placeholder="Ingrese apellido de usuario"
+                        placeholder="Apellido"
                         className="form-control"
                         name="lastname"
                         ref={register({
