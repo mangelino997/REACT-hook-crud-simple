@@ -3,9 +3,8 @@ import React, { useState, Fragment } from 'react';
 //se usa para evitar que hayan tantos div que no tienen otra funcion que encapsular todo el render/return
 import PersonList from './PersonList';
 import PersonAdd from './PersonAdd';
-import shortid from 'shortid' //npm install shortid
+import shortid from 'shortid'; //npm install shortid
 import PersonUpdate from './PersonUpdate';
-import Footer from './Footer';
 
 export default function PersonCrud() {
     const u = {
@@ -75,7 +74,7 @@ export default function PersonCrud() {
                     </div>
                 </div>
             </div>
-            <Footer></Footer>
+            
         </Fragment>
     )
 }
